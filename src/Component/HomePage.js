@@ -43,7 +43,7 @@ const HeroSection = () => {
     }
   }
   return (
-      <section id='herosection'>
+      <section id='home'>
         <div className="container flex flex-col-reverse md:flex-row 
         items-center px-6 space-y-0 mx-auto mt-10 md:space-y-0">
             <div className="flex flex-col mb-32 space-y-12 md:w-1/2">

@@ -49,9 +49,9 @@ const Contact = () => {
         console.log(formDetail)
     }
 
-    return(<div>
+    return(<div id="contact">
         <h2 className="text-center text-red-500 mt-8 text-4xl font-bold">Get In Touch</h2>
-        <div id="contact" className="flex max-w-4xl m-auto mt-9 flex-col md:flex-row items-center md:justify-between space-y-8 ">
+        <div  className="flex max-w-4xl m-auto mt-10 flex-col md:flex-row items-center md:items-start md:justify-between space-y-8 ">
                 <img src={pic} alt="cartoon cat" className="max-w-xs animate-bounce"/>
             <form className={classes.containerContactForm} onSubmit={preventDefault}>
                 <InputForm 
