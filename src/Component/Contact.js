@@ -6,8 +6,8 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const initialDetail= {
-        firstName:'',
-        lastName:'',
+        name:'',
+        companyName:'',
         email:'',
         phone:'',
         message:''
@@ -19,12 +19,12 @@ const Contact = () => {
     const [status,setStatus] = useState('')
   
 
-    const changeHandlerFirstName = (e) => {
-        setFormDetail({ ...formDetail, firstName: e.target.value})
+    const changeHandlername = (e) => {
+        setFormDetail({ ...formDetail, name: e.target.value})
     }
 
-    const changeHandlerLastName = (e) =>{
-        setFormDetail({ ...formDetail, lastName: e.target.value})
+    const changeHandlercompanyName = (e) =>{
+        setFormDetail({ ...formDetail, companyName: e.target.value})
     }
 
     const changeHandlerEmail = (e) =>{
@@ -66,20 +66,20 @@ const Contact = () => {
                 <img src={pic} alt="cartoon cat" className="max-w-xs animate-bounce"/>
             <form className={classes.containerContactForm} onSubmit={sendEmail} ref={form}>
                 <InputForm 
-                onChange={changeHandlerFirstName}
+                onChange={changeHandlername}
                 className="text-red-500"
                 type='text'
-                placeholder='First Name' 
-                value={formDetail.firstName}
+                placeholder='Name' 
+                value={formDetail.name}
                 name='name'
                 />
                 <InputForm
-                onChange={changeHandlerLastName}
+                onChange={changeHandlercompanyName}
                 className="text-red-500"
                 type='text'
-                placeholder='Last Name'
-                value={formDetail.lastName}
-                name='lastName'
+                placeholder='Company Name'
+                value={formDetail.companyName}
+                name='company'
                 />
                 <InputForm
                 onChange={changeHandlerEmail}
