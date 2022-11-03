@@ -13,6 +13,7 @@
   grid-template-rows: 50px 50px 100px;
   gap: 8px;
   border-radius: 10px;
+  margin-left: 60px;
 }
 
 .btnSend {
@@ -37,5 +38,6 @@
 @media (max-width: 550px) {
   .containerContactForm {
     grid-template-columns: 200px 200px;
+    margin-left: 0;
   }
 }

@@ -1,7 +1,8 @@
-import { useState } from "react"
+import { useState,useRef } from "react"
 import InputForm from "../UI/InputForm"
 import classes from './Contact.module.css'
 import pic from "../Assets/spacecat.png"
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const initialDetail= {
@@ -11,6 +12,8 @@ const Contact = () => {
         phone:'',
         message:''
     }
+
+    const form = useRef();
 
     const [formDetail,setFormDetail] = useState(initialDetail)
     const [buttonText,setButtonText] = useState('send')
@@ -42,24 +45,32 @@ const Contact = () => {
     //     setFormDetail({...formDetail,
     //        [category]:value} )
     // }
-
-    const preventDefault = (event) =>{
-        event.preventDefault()
+    
+    const sendEmail = (e) => {
+        e.preventDefault()
         setFormDetail(initialDetail)
         console.log(formDetail)
-    }
+    
+        emailjs.sendForm('service_8qnti8g', 'template_l0z0kv4', form.current, 'Vgxe09W1admkxYKsd')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
 
     return(<div id="contact">
         <h2 className="text-center text-red-500 mt-8 text-4xl font-bold">Get In Touch</h2>
         <div  className="flex max-w-4xl m-auto mt-10 flex-col md:flex-row items-center md:items-start md:justify-between space-y-8 ">
                 <img src={pic} alt="cartoon cat" className="max-w-xs animate-bounce"/>
-            <form className={classes.containerContactForm} onSubmit={preventDefault}>
+            <form className={classes.containerContactForm} onSubmit={sendEmail} ref={form}>
                 <InputForm 
                 onChange={changeHandlerFirstName}
                 className="text-red-500"
                 type='text'
                 placeholder='First Name' 
                 value={formDetail.firstName}
+                name='name'
                 />
                 <InputForm
                 onChange={changeHandlerLastName}
@@ -67,6 +78,7 @@ const Contact = () => {
                 type='text'
                 placeholder='Last Name'
                 value={formDetail.lastName}
+                name='lastName'
                 />
                 <InputForm
                 onChange={changeHandlerEmail}
@@ -74,6 +86,7 @@ const Contact = () => {
                 type={'email'}
                 placeholder={'Email Address'}
                 value={formDetail.email}
+                name='email'
                 />
                 <InputForm
                 onChange={changeHandlerPhoneNumber}
@@ -81,6 +94,7 @@ const Contact = () => {
                 type={'number'}
                 placeholder='Phone No.'
                 value={formDetail.phone}
+                name='number'
                 />
                 <InputForm
                 onChange={changeHandlerMessage}
@@ -88,6 +102,7 @@ const Contact = () => {
                 type='text'
                 placeholder={'Message'}
                 value={formDetail.message}
+                name='message'
                  />
              <button type="submit" className={classes.btnSend} >Send</button>
             </form>
@@ -103,3 +118,4 @@ const Contact = () => {
 }
 
 export default Contact
+

@@ -9,6 +9,7 @@ const InputForm = (props) =>{
                 type={props.type} 
                 placeholder={props.placeholder}
                 value={props.value}
+                name={props.name}
          />
     )
 }
