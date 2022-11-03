@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './AnimationImg.module.css'
-import {ReactComponent as Githubs} from '../Assets/github2.svg'
+// import {ReactComponent as Githubs} from '../Assets/github2.svg'
 import github from '../Assets/githubgreen.svg'
 
 function AnimationImg(props) {

@@ -16,8 +16,7 @@ const Contact = () => {
     const form = useRef();
 
     const [formDetail,setFormDetail] = useState(initialDetail)
-    const [buttonText,setButtonText] = useState('send')
-    const [status,setStatus] = useState({})
+    const [status,setStatus] = useState('')
   
 
     const changeHandlerFirstName = (e) => {
@@ -54,6 +53,8 @@ const Contact = () => {
         emailjs.sendForm('service_8qnti8g', 'template_l0z0kv4', form.current, 'Vgxe09W1admkxYKsd')
           .then((result) => {
               console.log(result.text);
+              setStatus(result.text)
+
           }, (error) => {
               console.log(error.text);
           });
@@ -106,12 +107,9 @@ const Contact = () => {
                  />
              <button type="submit" className={classes.btnSend} >Send</button>
             </form>
-            {
-            status.message && 
-            <p className={`classes.${status.success === false ? "danger" : "success"}`}>
-                {status.message}
-            </p>
-            }
+            <h1 className={`classes.${status === "OK" ? "success" : "danger"}`}>
+                {status && alert("Email Send")}
+            </h1>
             </div>
         </div>
     )
