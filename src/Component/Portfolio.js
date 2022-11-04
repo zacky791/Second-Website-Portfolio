@@ -7,8 +7,8 @@ import classes from '../UI/AnimationImg.module.css'
 
 function Portfolio() {
   return (
-    <div id='portfolio' className=' m-auto max-w-max'>
-      <h1 className='text-4xl font-bold mt-10 mb-10 text-red-500 text-center md:text-left' >My Project</h1>
+    <div id='portfolio' className=' m-auto max-w-max mt-10'>
+      <h1 className='text-4xl font-bold mb-10 text-red-500 text-center md:text-left' >My Project</h1>
         <div className="container flex md:space-x-10 flex-col md:flex-row items-center">
         <div className={classes.container1}>
             <img src={work1} alt="work1" className='max-w-xs' />

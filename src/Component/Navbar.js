@@ -1,4 +1,5 @@
 import React from 'react'
+import resume from '../Assets/Zakaria_Resumee.pdf'
 
 const Navbar = () => {
   return (
@@ -13,8 +14,8 @@ const Navbar = () => {
             <a href="#portfolio" className='hover:text-yellow-400 font-bold hover:underline hover:decoration-red-500 hover:underline-offset-8'>Projects</a>
             <a href="#contact" className='hover:text-yellow-400 font-bold hover:underline hover:decoration-red-500 hover:underline-offset-8'>Contact</a>
         </div>
-        <button className='bg-green-500 hidden md:block px-7 py-3 rounded-full 
-        text-white hover:bg-yellow-700'> Let's Connect </button>
+        <a className='bg-green-500 hidden md:block px-7 py-3 rounded-full 
+        text-white hover:bg-yellow-700' href={resume}> My Resume </a>
         </div>
     </nav>
   )
