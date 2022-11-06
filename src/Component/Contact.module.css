@@ -1,11 +1,11 @@
-.mainContainerContactForm {
+/* .mainContainerContactForm {
   display: flex;
   gap: 300px;
   width: 700px;
   margin-top: 80px;
   margin-bottom: 120px;
   margin-left: 220px;
-}
+} */
 
 .containerContactForm {
   display: grid;
@@ -14,6 +14,8 @@
   gap: 8px;
   border-radius: 10px;
   margin-left: 60px;
+  grid-row: 1/-4;
+  grid-column: 1/-4;
 }
 
 .btnSend {
@@ -24,6 +26,7 @@
   background-color: greenyellow;
   border-radius: 20px;
   cursor: pointer;
+  position: block;
 }
 
 .btnSend:hover {
@@ -48,5 +51,10 @@
   .containerContactForm {
     grid-template-columns: 200px 200px;
     margin-left: 0;
+  }
+
+  .btnSend {
+    position: relative;
+    left: 75%;
   }
 }

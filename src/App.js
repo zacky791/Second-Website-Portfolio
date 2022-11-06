@@ -1,18 +1,32 @@
-import { Fragment } from "react";
+import { Fragment,useState } from "react";
 import AboutMe from "./Component/AboutMe";
 import BackgroundImg from "./Component/Backgroundimg";
 import Contact from "./Component/Contact";
 import HomePage from "./Component/HomePage";
 import Navbar from "./Component/Navbar";
+import NavbarMobile from "./Component/NavbarMobile";
 import Portfolio from "./Component/Portfolio";
 
 function App() {
+
+  const [cartIsShown,setCartIsShown] = useState(false)
+
+  const showCart = () => {
+    setCartIsShown(true)
+  }
+
+  const hideCart = () => {
+    setCartIsShown(false)
+  }
+
+  
   return (
   <Fragment>
     <BackgroundImg>
-    <Navbar/>
+    <Navbar showCart={showCart}/>
+    { cartIsShown && <NavbarMobile hideCart={hideCart}/>}
     <HomePage/>
-    </BackgroundImg>
+    </BackgroundImg> 
     <AboutMe/>
     <Portfolio/>
     <Contact/>
