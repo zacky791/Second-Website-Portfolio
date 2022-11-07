@@ -10,8 +10,9 @@ function AnimationImg(props) {
       <div>
         <p className='font-bold'>{props.title}</p>
         <p className='text-xs italic mt-2'>{props.description}</p>
+        <p className='text-xs italic mt-2'>{props.software}</p>
         <div className='flex align-middle justify-center mt-4'>
-        <a href="https://github.com/"> <img src={github} className='' alt="github" /> </a>
+        <a href={props.github}> <img src={github} className='' alt="github" /> </a>
         <a href={props.landingPage}> <img src={liverservericon} className=' ml-4 w-14 mt-1' alt="landing page" /> </a>
         </div>
       </div>
