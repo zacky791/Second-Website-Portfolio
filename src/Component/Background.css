@@ -1,0 +1,14 @@
+.backgroundimg {
+  background-image: url(../Assets/mypic.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top right;
+  position: relative;
+}
+
+@media (max-width: 550px) {
+  .backgroundimg {
+    background-image: url(../Assets/phonepic2.jpg);
+  }
+}

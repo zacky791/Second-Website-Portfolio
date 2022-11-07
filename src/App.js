@@ -2,6 +2,7 @@ import { Fragment,useState } from "react";
 import AboutMe from "./Component/AboutMe";
 import BackgroundImg from "./Component/Backgroundimg";
 import Contact from "./Component/Contact";
+import Footer from "./Component/Footer";
 import HomePage from "./Component/HomePage";
 import Navbar from "./Component/Navbar";
 import NavbarMobile from "./Component/NavbarMobile";
@@ -30,6 +31,7 @@ function App() {
     <AboutMe/>
     <Portfolio/>
     <Contact/>
+    <Footer/>
   </Fragment>
   )
 }

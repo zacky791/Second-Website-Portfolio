@@ -6,7 +6,7 @@ import Example from "./Tabs";
 function AboutMe() {
     
   return (
-    <div id='about' className="container flex flex-col items-center md:items-start md:flex-row mt-16 m-auto max-w-5xl "> 
+    <div id='about' className="container flex flex-col items-center md:items-start md:flex-row mt-16 m-auto md:max-w-5xl max-w-md"> 
         <img src={pic2} alt="aboutMePic" className='max-w-xs' />
         <div className='md:ml-10'>
         <h1 className='font-bold text-4xl mb-4 mt-8 md:mt-0 text-red-500 text-center md:text-left' >About Me</h1>

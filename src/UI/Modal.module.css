@@ -24,7 +24,8 @@
 
 .xicon {
   position: relative;
-  transform: translateX(98%);
+  transform: translateX(96%);
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {

@@ -7,7 +7,7 @@ const Navbar = (props) => {
   return (
     <nav className="relative container mx-auto p-6">
         <div className="flex items-center justify-between">
-           <h1 className="font-bold text-3xl">LOGO</h1>
+           <h1 className="font-bold text-3xl">Zack</h1>
         <div className="hidden md:flex space-x-12">
             <a href="#home" className='hover:text-yellow-400 font-bold hover:underline hover:decoration-red-500 hover:underline-offset-8' >Home</a>
             <a href="#about" className='hover:text-yellow-400 font-bold hover:underline hover:decoration-red-500 hover:underline-offset-8' >About</a>
