@@ -1,11 +1,7 @@
 import React from 'react'
-import work1 from "../Assets/work-1.png"
-import work2 from "../Assets/work-2.png"
-import work3 from "../Assets/work-3.png"
 import bravepic from '../Assets/brave.PNG'
 import projectpic from '../Assets/projpic2.PNG'
 import projectpic2 from '../Assets/projpic3.PNG'
-import try2 from '../Assets/mywork.png'
 import AnimationImg from '../UI/AnimationImg'
 import classes from '../UI/AnimationImg.module.css'
 
