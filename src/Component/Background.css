@@ -12,3 +12,20 @@
     background-image: url(../Assets/phonepic2.jpg);
   }
 } */
+
+.dot {
+  list-style: none;
+}
+
+.dot li::before {
+  content: "\2022";
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: 2px;
+}
+
+.dot li {
+  color: red;
+}

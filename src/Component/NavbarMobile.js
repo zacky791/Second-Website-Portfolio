@@ -1,6 +1,6 @@
 import React from 'react'
 import Modal from '../UI/Modal'
-import resume from '../Assets/Zakaria_Resumee.pdf'
+import resume from '../Assets/Resumezack.pdf'
 
 function NavbarMobile(props) {
     

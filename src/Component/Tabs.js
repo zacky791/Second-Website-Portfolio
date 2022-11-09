@@ -1,30 +1,33 @@
-import {
-    Tabs,
-    TabsHeader,
-    TabsBody,
-    Tab,
-    TabPanel,
-  } from "@material-tailwind/react";
+import {Tabs,TabsHeader,TabsBody,Tab,TabPanel} from "@material-tailwind/react";
+import './Background.css'
+import iconhtml from '../Assets/iconhtml.png'
+import iconcss from '../Assets/iconcss.png'
+import iconreact from '../Assets/iconreact.png'
+import iconjs from '../Assets/iconjs.png'
    
   export default function Example() {
     const data = [
       {
         label: "Skills",
         value: "html",
-        desc: <section className="flex">
-        <div>
-          <p>
-            <span className="text-red-500 mb-6">React</span><br/>Making tons of project using react
-            <br/>such as building spotify,linkedIn <br/> and facebook <br/>
-          </p>
+        desc: <section className="flex ml-10 md:flex md:ml-2">
+        {/* <ul className="dot">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>React</li>
+          <li>Tailwind Css</li>
+        </ul> */}
+
+       <div className="md:flex">
+       <img src={iconhtml} alt="" />
+       <img src={iconcss} alt="" />
        </div>
 
-       <div className="ml-8">
-         <p>
-          <span className="text-red-500">Javascript</span><br/><p>Studying until ECMAScript 6 modern<br/>features 
-          such as arrow function</p> 
-         </p>
-       </div>
+      <div className="md:flex">
+       <img src={iconjs} alt="" />
+       <img src={iconreact} alt="" />
+      </div>
      </section>
     },
       {
