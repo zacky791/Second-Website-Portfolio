@@ -1,5 +1,5 @@
 import React from 'react'
-import bravepic from '../Assets/Brave.PNG'
+import bravepic from '../Assets/brave.PNG'
 import projectpic from '../Assets/projpic2.PNG'
 import projectpic2 from '../Assets/projpic3.PNG'
 import AnimationImg from '../UI/AnimationImg'
