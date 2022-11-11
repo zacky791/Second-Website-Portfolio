@@ -15,13 +15,13 @@ function Portfolio() {
       <h1 className='text-4xl font-bold mb-10 text-red-500 text-center md:text-left' >My Projects</h1>
         <div className="container flex md:space-x-10 flex-col md:flex-row items-center ">
         <div className={classes.container1}>
-            <img src={omnifood} alt="work1" className='w-auto h-72' />
-            <AnimationImg title="Omni food" description="" software="(Html,Css,Javascript)"
+            <img src={omnifood} alt="" className='w-auto h-72' />
+            <AnimationImg title="Omni food" description="" software="Html,Css,Javascript"
             landingPage={'https://omni-foodss.netlify.app/'} github={'https://github.com/zacky791/Omni-Food-'}/>
         </div>
         <div className={classes.container1}>
-            <img src={maybank} alt="work1" className='w-auto h-72' />
-            <AnimationImg title="Maybank" description="" software="(Html,Css,Javascript)" 
+            <img src={maybank} alt="" className='w-auto h-72' />
+            <AnimationImg title="Maybank" description="" software="React,Tailwind CSS" 
             landingPage={""} github={''}/>
         </div>
         {/* <div className={classes.container1}>
@@ -30,26 +30,26 @@ function Portfolio() {
         </div> */}
       </div>
       <div className="container flex md:space-x-10 flex-col md:flex-row items-center">
-        <div className={classes.container1}>
-            <img src={projectpic2} alt="work1" className='w-auto h-72' />
-            <AnimationImg title="GrabFood" description="Description"/>
-        </div>
-        <div className={classes.container1}>
-            <img src={projectpic} alt="work1" className='w-auto h-72' />
+      <div className={classes.container1}>
+            <img src={projectpic} alt="" className='w-auto h-72' />
             <AnimationImg title="My Portfolio" description="Description" software='React,Tailwind CSS'
             landingPage={'https://zakariazainuddin.netlify.app/'} github={''}
             />
         </div>
+        <div className={classes.container1}>
+            <img src={projectpic2} alt="" className='w-auto h-72' />
+            <AnimationImg title="GrabFood" description="Description"/>
+        </div>
       </div>
       <div className="container flex md:space-x-10 flex-col md:flex-row items-center">
          <div className={classes.container1}>
-            <img src={bravepic} alt="work1" className='w-auto h-72' />
+            <img src={bravepic} alt="" className='w-auto h-72' />
             <AnimationImg title="Brave Or Coward" description="Whoever gets the 100 points first wins !" software="(Html,Css,Javascript)" 
             landingPage={"https://brave-or-coward.netlify.app/"} github={'https://github.com/zacky791/Brave-Or-Coward-Game'}/>
         </div>
         <div className={classes.container1}>
-            <img src={spotify} alt="work1" className='w-auto h-72' />
-            <AnimationImg title="Spotify (Future Project)" description="Description" software=''
+            <img src={spotify} alt="" className='w-auto h-72' />
+            <AnimationImg title="Spotify (Future Project)" description="" software='Next.js, Middleware, Spotify API, Tailwind, NextAuth, Recoil'
             landingPage={''} github={''}
             />
         </div>
