@@ -8,7 +8,7 @@
 .container1::before {
   content: "";
   /* background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%); */
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  background: linear-gradient(rgba(0, 0, 0, 0.86), #ff004f);
   opacity: 1;
   position: absolute;
   width: 100%;
