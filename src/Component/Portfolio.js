@@ -43,7 +43,7 @@ function Portfolio() {
         <div className={classes.container1}>
             <img src={projectpic2} alt="" className='w-auto h-72' />
             <AnimationImg title="GrabFood" description="" software='React,Tailwind CSS'
-            landingPage={''} github={'https://github.com/zacky791/grabfood-project'}/>
+            landingPage={'https://grabfood2.netlify.app/'} github={'https://github.com/zacky791/grabfood2'}/>
         </div>
         <div className={classes.container1}>
             <img src={spotify} alt="" className='w-auto h-72' />
