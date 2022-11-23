@@ -13,7 +13,7 @@ function NavbarMobile(props) {
         <a onClick={props.hideCart} href="#about">About</a>
         <a onClick={props.hideCart} href="#portfolio">Projects</a>
         <a onClick={props.hideCart} href="#contact">Contact</a>
-        <a href={resume}>My Resumek</a>
+        <a href={resume}>My Resume</a>
        </div>
     </div>
     </Modal>
