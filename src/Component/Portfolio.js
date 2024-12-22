@@ -5,7 +5,6 @@ import work3 from "../Assets/work-3.png"
 import bravepic from '../Assets/bravepic.PNG'
 import projectpic from '../Assets/projpic2.PNG'
 import projectpic2 from '../Assets/projpic3.PNG'
-import try2 from '../Assets/mywork.png'
 import AnimationImg from '../UI/AnimationImg'
 import classes from '../UI/AnimationImg.module.css'
 
