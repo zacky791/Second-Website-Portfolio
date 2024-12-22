@@ -1,5 +1,5 @@
 import React from 'react'
-import resume from '../Assets/Resumezack.pdf'
+import resume from '../Assets/Resumezack2.pdf'
 import "./Navbar.css"
 
 const Navbar = (props) => {
